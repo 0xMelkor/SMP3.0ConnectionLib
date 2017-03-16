@@ -5,6 +5,7 @@ This project aims at providing a simple set of instruments to cope with SAP Mobi
 This library is intended as a lightweight alternative to the heavy [SAP MAFLogon framework](https://github.com/SAP/sap_mobile_native_android).
 
 You can include this library as a gradle dependency as follows.
+
 **Add it in your root build.gradle at the end of repositories:**
 ```groovy
 allprojects {
