@@ -193,7 +193,7 @@ public class SmpConnection
 
         final Ion ion = getIonInstance();
         ion.build(_context)
-                .load("POST", _smp_service_root +"/odata/applications/latest/"+_appid+"Connections")
+                .load("POST", _smp_service_root +"/odata/applications/latest/"+_appid+"/Connections")
                 .addHeader("Content-type", "application/xml")
                 .basicAuthentication(
                     _credentials.getUsername(),
