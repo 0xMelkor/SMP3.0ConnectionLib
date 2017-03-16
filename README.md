@@ -21,3 +21,25 @@ allprojects {
 	        compile 'com.github.insanediv:SMP3.0ConnectionLib:1.0.1'
 	}
 ```
+
+## Basic usage
+```java
+	SmpConnection smpConnection = new SmpConnection();
+	smpConnection.with(context);
+	smpConnection.setUserCredentials("<username>","<password>");
+        smpConnection.setSmpEndpoint("http(s)://<host>:<port>", "<your appid>");
+        smpConnection.setDelegate(new  SmpConnectionEventsDelegate {
+   		 void onCredentialsRequired(){
+		 	//Your magic happens here..
+		 }
+    		 void onLoginError(Exception e, Response<String> result){
+		 	//Your magic happens here..
+		 }
+    		 void onRegistrationError(Exception e, Response<String> result){
+		 	//Your magic happens here..
+		 }
+ 	         void onConnectionSuccess(){
+		 	//Your magic happens here..
+		 }
+});
+```
