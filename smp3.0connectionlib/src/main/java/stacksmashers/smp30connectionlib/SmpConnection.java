@@ -9,10 +9,11 @@ import com.koushikdutta.ion.Response;
 
 import java.net.URI;
 
-import stack_smashers.smpconnectionutilitieslib.delegate.SmpConnectionEventsDelegate;
-import stack_smashers.smpconnectionutilitieslib.netutil.IonResponseManager;
-import stack_smashers.smpconnectionutilitieslib.netutil.IonSslUtil;
-import stack_smashers.smpconnectionutilitieslib.sharedprefs.SharedPreferenceAdapter;
+import stacksmashers.smp30connectionlib.delegate.SmpConnectionEventsDelegate;
+import stacksmashers.smp30connectionlib.netutil.IonResponseManager;
+import stacksmashers.smp30connectionlib.netutil.IonSslUtil;
+import stacksmashers.smp30connectionlib.sharedprefs.SharedPreferenceAdapter;
+
 
 /**************************
  ** {__-StAcK_SmAsHeRs-__} **

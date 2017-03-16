@@ -3,7 +3,8 @@ package stacksmashers.smp30connectionlib.sharedprefs;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import stack_smashers.smpconnectionutilitieslib.R;
+import stacksmashers.smp30connectionlib.R;
+
 
 /**
  * Created by a.simeoni on 10/03/2017.
