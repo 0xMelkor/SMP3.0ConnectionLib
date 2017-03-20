@@ -50,6 +50,11 @@ public class IonResponseManager {
         return smp_app_cid;
     }
 
+    public static void clearCookies(Ion ion){
+        CookieMiddleware middleware = ion.getCookieMiddleware();
+        middleware.clear();
+    }
+
     private static String getSmpAppCidCookieMatch(String cookie){
         Pattern pattern = Pattern.compile("X-SMP-APPCID=(.*?)(;|$)");
         Matcher matcher = pattern.matcher(cookie);

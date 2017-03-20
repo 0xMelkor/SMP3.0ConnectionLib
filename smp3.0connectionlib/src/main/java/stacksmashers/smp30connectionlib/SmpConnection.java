@@ -180,6 +180,9 @@ public class SmpConnection
 
     private void doLogin(){
         final Ion ion = getIonInstance();
+        if(_ignoreCookies){
+            IonResponseManager.clearCookies(ion);
+        }
         ion.build(_context)
                 .load("GET", _smp_service_root+"/odata/applications/latest/"+_appid)
                 .basicAuthentication(
