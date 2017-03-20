@@ -54,6 +54,7 @@ public class SmpConnection
     private String _appid;
     private UserCredentials _credentials;
     private SmpConnectionEventsDelegate _delegate;
+    private boolean _ignoreCookies = false;
 
     private String REGISTRATION_XML_BODY =
             "<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
@@ -94,6 +95,18 @@ public class SmpConnection
         return this;
     }
 
+    public boolean isIgnoreCookies(){
+        return _ignoreCookies;
+    }
+
+    /**
+     * Clear cookie cache before connecting
+     * */
+    public SmpConnection setIgnoreCookies(boolean value){
+        this._ignoreCookies = value;
+        return this;
+    }
+
     /**
      * Si connette alla piattaforma secondo le seguenti regole:
      * 1. Se non ci sono credenziali specificate dall'utente o memorizzate localmente
@@ -127,6 +140,15 @@ public class SmpConnection
         }
         doLogin();
     }
+
+    /**
+     * Clears stored credentials and X-SMP-APPCID token
+     * */
+    public void clearCache(){
+        SharedPreferenceAdapter.clearAll(_context);
+    }
+
+
 
     /**************************************/
     /********* Private methods ************/
@@ -170,6 +192,8 @@ public class SmpConnection
                     public void onCompleted(Exception e, Response<String> result) {
                         try {
                             new IonResponseManager(e, result);
+                            // Memorizzo le credenziali dell' utente
+                            storeUserCredentials(_credentials.getUsername(),_credentials.getPassword());
                             // Il login è andato a buon fine (non ho eccezione da IonResponseManager)
                             // Se il server mi ha restituito il connectionID in un cookie allora sono già registrato
                             // Altrimenti effettuo la registrazione
@@ -258,6 +282,13 @@ public class SmpConnection
         SharedPreferenceAdapter.setValueForKey(_context,
                 SharedPreferenceAdapter.SHARED_PREFS_KEY_SMP_CID,
                 x_smp_appcid);
+    }
+
+    private void storeUserCredentials(String username, String password){
+        SharedPreferenceAdapter.setValueForKey(_context,
+                SharedPreferenceAdapter.SHARED_PREFS_KEY_SMP_USERNAME, username);
+        SharedPreferenceAdapter.setValueForKey(_context,
+                SharedPreferenceAdapter.SHARED_PREFS_KEY_SMP_PASSWORD, password);
     }
 
     private UserCredentials getStoredCredentials()
