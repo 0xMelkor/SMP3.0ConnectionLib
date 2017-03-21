@@ -216,7 +216,7 @@ public class SmpConnection
                             }
 
                         } catch (Exception e1) {
-                            if(result.getHeaders()!=null && result.getHeaders().code() == 401){
+                            if(result.getHeaders() != null && result.getHeaders().code() == 401){
                                 onLoginError(e, result);
                             }
                             else{
