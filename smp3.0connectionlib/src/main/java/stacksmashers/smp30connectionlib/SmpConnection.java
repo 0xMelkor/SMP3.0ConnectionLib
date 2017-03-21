@@ -172,6 +172,12 @@ public class SmpConnection
         }
     }
 
+    private void onNetworkError(Exception e, Response<String> result){
+        if(_delegate!=null){
+            _delegate.onNetworkError(e, result);
+        }
+    }
+
     private void onRegistrationError(Exception e, Response<String> result){
         if(_delegate!=null){
             _delegate.onRegistrationError(e, result);
@@ -210,11 +216,17 @@ public class SmpConnection
                             }
 
                         } catch (Exception e1) {
-                            onLoginError(e, result);
+                            if(result.getHeaders().code() == 401){
+                                onLoginError(e, result);
+                            }
+                            else{
+                                onNetworkError(e, result);
+                            }
                         }
                     }
                 });
     }
+
 
     private void registerDevice(){
 
@@ -237,7 +249,13 @@ public class SmpConnection
                             storeXSMPAppCid(IonResponseManager.getConnectionIdFromResponse(result));
                             onConnectionSuccess();
                         } catch (Exception e1) {
-                            onRegistrationError(e, result);
+
+                            if(result.getHeaders().code() == 403){
+                                onRegistrationError(e, result);
+                            }
+                            else{
+                                onNetworkError(e, result);
+                            }
                         }
                     }
                 });

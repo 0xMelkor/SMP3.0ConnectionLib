@@ -30,4 +30,12 @@ public interface SmpConnectionEventsDelegate {
      * nelle shared preferences
      * */
     void onConnectionSuccess();
+
+    /**
+     * Si è verificato un errore di rete
+     *
+     * @param e      Eccezione generata
+     * @param result Response http ricevuta dal servizio in fase di autenticazione
+     */
+    void onNetworkError(Exception e, Response<String> result);
 }
