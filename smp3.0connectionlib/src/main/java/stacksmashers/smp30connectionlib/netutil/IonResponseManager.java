@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 
 public class IonResponseManager {
 
-    public IonResponseManager(Exception e, Response<String> result) throws Exception{
+    public IonResponseManager(Exception e, Response result) throws Exception{
 
         if (e != null) throw e;
         if (result == null) throw new Exception("No result error");
