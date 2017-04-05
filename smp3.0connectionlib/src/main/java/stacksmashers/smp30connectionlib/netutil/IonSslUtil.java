@@ -1,5 +1,6 @@
 package stacksmashers.smp30connectionlib.netutil;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 
 import com.koushikdutta.ion.Ion;
@@ -29,6 +30,7 @@ public class IonSslUtil {
         SSLContext _context = SSLContext.getInstance("TLS");
 
         HostnameVerifier hostnameVerifier = new HostnameVerifier() {
+            @SuppressLint("BadHostnameVerifier")
             @Override
             public boolean verify(String hostname, SSLSession session) {
                 return true;
@@ -36,12 +38,14 @@ public class IonSslUtil {
         };
 
         TrustManager[] truster=new TrustManager[]{new X509TrustManager() {
+            @SuppressLint("TrustAllX509TrustManager")
             @Override
             public void checkClientTrusted(
                     java.security.cert.X509Certificate[] x509Certificates,
                     String s) throws CertificateException {
             }
 
+            @SuppressLint("TrustAllX509TrustManager")
             @Override
             public void checkServerTrusted(
                     java.security.cert.X509Certificate[] x509Certificates,

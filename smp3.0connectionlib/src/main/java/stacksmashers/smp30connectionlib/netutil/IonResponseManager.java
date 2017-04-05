@@ -36,6 +36,7 @@ public class IonResponseManager {
         CookieManager manager = middleware.getCookieManager();
         Headers cookieHeaders = new Headers();
         Map<String, List<String>> cookies = manager.get(uri, cookieHeaders.getMultiMap());
+        @SuppressWarnings("unchecked")
         String cookieString = ((List<String>)cookies.values().toArray()[0]).get(0);
         return getSmpAppCidCookieMatch(cookieString);
     }
