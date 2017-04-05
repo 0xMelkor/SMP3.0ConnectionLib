@@ -3,13 +3,17 @@ package stacksmashers.smp30connectionlib;
 import android.content.Context;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 import com.koushikdutta.ion.Response;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 import stacksmashers.smp30connectionlib.delegate.ODataHttpClientCallback;
@@ -35,6 +39,9 @@ public class ODataHttpClient {
     private Context context;
     private ODataHttpClientCallback delegate;
 
+    private Class toPojoClass;
+    private JsonDeserializer deserializer;
+
 
     public ODataHttpClient(SmpConnection connection, String odataBackendConnection) {
         this.connection = connection;
@@ -51,6 +58,13 @@ public class ODataHttpClient {
         this.delegate = delegate;
         return this;
     }
+
+    public ODataHttpClient setDeserializer(Class clazz, JsonDeserializer deserializer){
+        this.deserializer = deserializer;
+        this.toPojoClass = clazz;
+        return this;
+    }
+
 
     /**
      * Fetches a collection of OData entities. The OData URL is built as
@@ -97,14 +111,16 @@ public class ODataHttpClient {
 
     private List buildResult(JsonObject raw, Type type) {
         JsonArray jsonArray = raw.get("d").getAsJsonObject().get("results").getAsJsonArray();
-        return new Gson().fromJson(jsonArray,type);
-    }
-
-    //TODO: REMOVE
-    public void testInterface(JsonObject raw, Type type){
-        List l = buildResult(raw, type);
-        if(delegate != null){
-            delegate.onFetchEntitySetSuccessCallback(l);
+        List result;
+        if(toPojoClass != null && deserializer != null){
+            // Use deserialization if available
+            GsonBuilder gsonBuilder = new GsonBuilder();
+            gsonBuilder.registerTypeAdapter(toPojoClass, deserializer);
+            result = gsonBuilder.create().fromJson(jsonArray, type);
         }
+        else{
+            result = new Gson().fromJson(jsonArray,type);
+        }
+        return result;
     }
 }
