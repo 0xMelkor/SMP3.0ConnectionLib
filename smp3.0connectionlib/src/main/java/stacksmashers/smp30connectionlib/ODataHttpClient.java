@@ -86,8 +86,8 @@ public class ODataHttpClient {
                 .load(serviceUrl)
                 .addHeader("X-SMP-APPCID", connection.getRegisteredXSmpAppCid())
                 .addHeader("Accept", "application/json")
-                .basicAuthentication(connection.getAvailableCredentials().getUsername(),
-                        connection.getAvailableCredentials().getPassword())
+                .basicAuthentication(connection.getStoredCredentials().getUsername(),
+                        connection.getStoredCredentials().getPassword())
                 .asJsonObject()
                 .withResponse()
                 .setCallback(new FutureCallback<Response<JsonObject>>() {

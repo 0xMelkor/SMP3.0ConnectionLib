@@ -50,14 +50,8 @@ public class SmpConnection {
     private Context context;
     private String smpServiceRoot;
     private String appid;
-    private UserCredentials userCredentials;
     private SmpConnectionEventsDelegate delegate;
     private boolean ignoreCookies = false;
-
-
-    public SmpConnection() {
-        userCredentials = new UserCredentials("", "");
-    }
 
     public SmpConnection with(@NonNull Context context) {
         this.context = context;
@@ -80,7 +74,7 @@ public class SmpConnection {
     }
 
     public SmpConnection setUserCredentials(@NonNull String username, @NonNull String password) {
-        this.userCredentials = new UserCredentials(username, password);
+        storeUserCredentials(username, password);
         return this;
     }
 
@@ -121,9 +115,8 @@ public class SmpConnection {
      * @see <a href="https://help.sap.com/saphelp_smp304sdk/helpdata/en/7c/0aa27070061014bf49dc643a537fd6/content.htm"></a>
      */
     public void connect() {
-        UserCredentials credentials = getAvailableCredentials();
         // Devono esserci delle credenziali, passate come parametro o memorizzate
-        if (credentials == null) {
+        if (!getStoredCredentials().isValid()) {
             onCredentialsRequired();
             return;
         }
@@ -141,6 +134,7 @@ public class SmpConnection {
     /**************************************/
     /********* Private methods ************/
     /**************************************/
+
 
     private void onCredentialsRequired() {
         if (delegate != null) {
@@ -180,8 +174,8 @@ public class SmpConnection {
         ion.build(context)
                 .load("GET", smpServiceRoot + "/odata/applications/latest/" + appid)
                 .basicAuthentication(
-                        userCredentials.getUsername(),
-                        userCredentials.getPassword())
+                        getStoredCredentials().getUsername(),
+                        getStoredCredentials().getPassword())
                 .asString()
                 .withResponse()
                 .setCallback(new FutureCallback<Response<String>>() {
@@ -189,8 +183,7 @@ public class SmpConnection {
                     public void onCompleted(Exception e, Response<String> result) {
                         try {
                             new IonResponseManager(e, result);
-                            // Memorizzo le credenziali dell' utente
-                            storeUserCredentials(userCredentials.getUsername(), userCredentials.getPassword());
+
                             // Il login è andato a buon fine (non ho eccezione da IonResponseManager)
                             // Se il server mi ha restituito il connectionID in un cookie allora sono già registrato
                             // Altrimenti effettuo la registrazione
@@ -230,8 +223,8 @@ public class SmpConnection {
                 .load("POST", smpServiceRoot + "/odata/applications/latest/" + appid + "/Connections")
                 .addHeader("Content-type", "application/xml")
                 .basicAuthentication(
-                        userCredentials.getUsername(),
-                        userCredentials.getPassword())
+                        getStoredCredentials().getUsername(),
+                        getStoredCredentials().getPassword())
                 .setStringBody(REGISTRATION_XML_BODY)
                 .asString()
                 .withResponse()
@@ -263,10 +256,6 @@ public class SmpConnection {
         return this.appid;
     }
 
-    public UserCredentials getUserCredentials() {
-        return this.userCredentials;
-    }
-
     public Ion getIonInstance() {
 
         Ion result;
@@ -284,21 +273,6 @@ public class SmpConnection {
         return result;
     }
 
-    /**
-     * @return Restituisce le credenziali impostate attraverso {@link this.setUserCredentials} se disponibili
-     * altrimenti le credenziali memorizzate nelle sharedPreferences se disponibili oppure null
-     */
-    public UserCredentials getAvailableCredentials() {
-        UserCredentials result = null;
-
-        if (userCredentials.isValid()) {
-            result = userCredentials;
-        } else if (getStoredCredentials().isValid()) {
-            result = getStoredCredentials();
-        }
-
-        return result;
-    }
 
     private void storeXSMPAppCid(String x_smp_appcid) {
         SharedPreferenceAdapter.setValueForKey(context,
@@ -313,7 +287,7 @@ public class SmpConnection {
                 SharedPreferenceAdapter.SHARED_PREFS_KEY_SMP_PASSWORD, password);
     }
 
-    private UserCredentials getStoredCredentials() {
+    public UserCredentials getStoredCredentials() {
         String username = SharedPreferenceAdapter.getValueForKey(context,
                 SharedPreferenceAdapter.SHARED_PREFS_KEY_SMP_USERNAME);
         String password = SharedPreferenceAdapter.getValueForKey(context,

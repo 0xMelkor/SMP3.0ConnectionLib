@@ -26,7 +26,7 @@ public class SharedPreferenceAdapter {
 
     public static String getValueForKey(Context ctx, String key){
         SharedPreferences prefs = ctx.getSharedPreferences(APP_ACCOUNT_PREFS_NAME, 0);
-        return prefs.getString(key, null);
+        return prefs.getString(key, "");
     }
 
     public static void clearAll(Context ctx){
