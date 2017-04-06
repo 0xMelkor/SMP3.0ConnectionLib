@@ -219,6 +219,10 @@ public class SmpConnection {
                 "<m:properties><d:DeviceType>Android</d:DeviceType></m:properties>" +
                 "</content></entry>";
 
+        if (ignoreCookies) {
+            IonResponseManager.clearCookies(ion);
+        }
+
         ion.build(context)
                 .load("POST", smpServiceRoot + "/odata/applications/latest/" + appid + "/Connections")
                 .addHeader("Content-type", "application/xml")
