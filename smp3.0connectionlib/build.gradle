@@ -7,6 +7,10 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
 
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 25
@@ -35,4 +39,6 @@ dependencies {
     compile "com.koushikdutta.ion:ion:"+ionVersion
 
     testCompile 'junit:junit:4.12'
+    // rMockito Unit tests
+    testCompile 'org.mockito:mockito-core:2.7.22'
 }

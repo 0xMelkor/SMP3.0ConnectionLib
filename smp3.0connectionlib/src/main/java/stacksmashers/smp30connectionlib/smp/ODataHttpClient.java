@@ -1,4 +1,4 @@
-package stacksmashers.smp30connectionlib;
+package stacksmashers.smp30connectionlib.smp;
 
 import android.content.Context;
 
@@ -26,7 +26,7 @@ import stacksmashers.smp30connectionlib.netutil.IonResponseManager;
  ***************************/
 
 public class ODataHttpClient {
-
+/*
     final String TAG = getClass().getCanonicalName();
 
     /**
@@ -34,7 +34,7 @@ public class ODataHttpClient {
      * In the case of multiple backend connections for your you should set the right
      * backend connection ID
      */
-    private String odataBackendConnection;
+ /*   private String odataBackendConnection;
     private SmpConnection connection;
     private Context context;
     private ODataHttpClientCallback delegate;
@@ -76,7 +76,7 @@ public class ODataHttpClient {
      *                      instances follow the next example
      *                      es. new TypeToken<ArrayList<PojoClass>>() {}.getType()
      **/
-    public void fetchODataEntitySet(String entitySetName, final Type resultSetType) {
+  /*  public void fetchODataEntitySet(String entitySetName, final Type resultSetType) {
 
         Ion ion = connection.getIonInstance();
         String serviceUrl = connection.getSmpServiceRoot();
@@ -122,5 +122,5 @@ public class ODataHttpClient {
             result = new Gson().fromJson(jsonArray,type);
         }
         return result;
-    }
+    }*/
 }

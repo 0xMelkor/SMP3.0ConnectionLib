@@ -3,11 +3,6 @@ package stacksmashers.smp30connectionlib.delegate;
 import com.koushikdutta.ion.Response;
 
 public interface SmpConnectionEventsDelegate {
-    /**
-     * Quando non vengono passate credenziali all'istanza di SmpConnection
-     * e non ci sono credenziali memorizzate nelle shared preferences
-     */
-    void onCredentialsRequired();
 
     /**
      * Si è verificato un errore nella fase di autenticazione
@@ -28,8 +23,9 @@ public interface SmpConnectionEventsDelegate {
     /**
      * Il processo di connessione alla SMP è andato a buon fine. Il connection id è memorizzato localmente
      * nelle shared preferences
+     * @param xsmpappcid Retrieved application connection ID
      * */
-    void onConnectionSuccess();
+    void onConnectionSuccess(String xsmpappcid);
 
     /**
      * Si è verificato un errore di rete
