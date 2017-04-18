@@ -50,22 +50,23 @@ allprojects {
             smpIntegration.setDelegate(new SmpConnectionEventsDelegate() {
                 @Override
                 public void onLoginError(Exception e, Response<String> result) {
-                    //Your magic happens here..
+                    // The server raised authentication error HTTP-401 Unauthorized
                 }
 
                 @Override
                 public void onRegistrationError(Exception e, Response<String> result) {
-                    //Your magic happens here..
+                     // The server raised error during the registration phase
                 }
 
                 @Override
                 public void onConnectionSuccess(String xsmpappcid) {
-                    //Your magic happens here..
+                    // You got a registration token!!
+		    // You are better to store this for further API calls
                 }
 
                 @Override
                 public void onNetworkError(Exception e, Response<String> result) {
-                    //Your magic happens here..
+                    // A network error happened. Use parameters "e" and "result" to get more details
                 }
             });
 
