@@ -23,7 +23,7 @@ allprojects {
 	}
 ```
 
-## Basic usage
+## Get a SMP registration token
 ```java
 	  // Reference to context
         Context context = this;
@@ -72,6 +72,52 @@ allprojects {
 
             // Starts connection attempt and  x-smp-app-cid retrieval. Events are back reported to the delegate
             smpIntegration.connect(username, password);
+        } catch (SmpExceptionInvalidInput ex) {
+            // INVALID PARAMETERS ARE PROVIDED
+            ex.printStackTrace();
+        }
+```
+## Invoke an SMP OData endpoint and parse the result with GSON
+```java
+	          // Reference to context
+        Context context = this;
+
+        // http(s)://<smp_host>:<port>
+        String smpOdataEndpoint = "https://smp.host.org/appcid/ODataCollectionEndpoint";
+
+        // Credentials
+        String username = "username";
+        String password = "password";
+
+        // Previously stored during connection phase
+        String xsmpappcid = "xxxx-xxxx-xxxx-xxxx";
+
+        // Ignore cookies during connection id retrieval
+        try {
+            ODataHttpClient oDataHttpClient = new ODataHttpClient(context, xsmpappcid,
+                    username, password);
+            oDataHttpClient.setDelegate(new ODataHttpClientCallback() {
+                @Override
+                public void onErrorCallback(Exception ex, Response response) {
+                    // A network error happened. Use parameters "ex" and "response" to get more details
+                }
+
+                @Override
+                public void onFetchEntitySuccessCallback(Object result) {
+                    // Callback invoked for single object retrieval
+                    // Currently unused
+                }
+
+                @Override
+                public void onFetchEntitySetSuccessCallback(List result) {
+                    // Callback invoked for object collection retrieval
+                }
+            });
+            
+            // GSON will inject json to a collection of PojoClass instances
+            Type type = new TypeToken<ArrayList<PojoClass>>() {}.getType() {};
+            oDataHttpClient.fetchODataEntitySet(smpOdataEndpoint,);
+
         } catch (SmpExceptionInvalidInput ex) {
             // INVALID PARAMETERS ARE PROVIDED
             ex.printStackTrace();
