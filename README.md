@@ -1,5 +1,6 @@
 [![](https://jitpack.io/v/insanediv/SMP3.0ConnectionLib.svg)](https://jitpack.io/#insanediv/SMP3.0ConnectionLib)
 [![Jenkins](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)]()
+[![Github Releases](https://img.shields.io/badge/awesome-project-ff69b4.svg)]()
 
 # SMP3.0 Connection Library
 This project aims at providing a simple set of instruments to cope with SAP Mobile Platform (SMP3.0) login and user onboarding process.
