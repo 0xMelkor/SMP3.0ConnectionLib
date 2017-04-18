@@ -7,5 +7,14 @@ package stacksmashers.smp30connectionlib.enums;
  ***************************/
 
 public enum TypeHttpProtocol {
-    TYPE_HTTP_PROTOCOL_HTTP,TYPE_HTTP_PROTOCOL_HTTPS
+    TYPE_HTTP_PROTOCOL_HTTP("HTTP"), TYPE_HTTP_PROTOCOL_HTTPS("HTTPS");
+    String value;
+
+    TypeHttpProtocol(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }

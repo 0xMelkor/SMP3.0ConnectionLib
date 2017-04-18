@@ -1,0 +1,1106 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003000')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003000')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ELISABETTA.MIELE@ACEASPA.IT",
+        "Pernr": "00003000",
+        "Sname": "MIELE ELISABETTA",
+        "Uname": "TESTSWFM2",
+        "Orgeh": "50003400",
+        "Orgtx": "PATRIMONIO E FACILITY MANAGEMENT",
+        "Plans": "50003975",
+        "Plstx": "ADMINISTRATIVE & GENERAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0001",
+        "IsDirect": "X",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002373')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002373')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ANTONELLA.IOPPI@ACEASPA.IT",
+        "Pernr": "00002373",
+        "Sname": "IOPPI ANTONELLA",
+        "Uname": "A35495C",
+        "Orgeh": "50003400",
+        "Orgtx": "PATRIMONIO E FACILITY MANAGEMENT",
+        "Plans": "50004205",
+        "Plstx": "ADMINISTRATIVE & GENERAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0001",
+        "IsDirect": "X",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001081')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001081')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ISABELLA.COLACCHI@ACEASPA.IT",
+        "Pernr": "00001081",
+        "Sname": "COLACCHI ISABELLA",
+        "Uname": "A37215C",
+        "Orgeh": "50003400",
+        "Orgtx": "PATRIMONIO E FACILITY MANAGEMENT",
+        "Plans": "50004265",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0001",
+        "IsDirect": "X",
+        "IsPresent": ""
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002753')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002753')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MELANIA.MARIANI@ACEASPA.IT",
+        "Pernr": "00002753",
+        "Sname": "MARIANI MELANIA",
+        "Uname": "A38378Y",
+        "Orgeh": "50003400",
+        "Orgtx": "PATRIMONIO E FACILITY MANAGEMENT",
+        "Plans": "50004292",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "X",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003146')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003146')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ARCANGELO.MUZIO@ACEASPA.IT",
+        "Pernr": "00003146",
+        "Sname": "MUZIO ARCANGELO",
+        "Uname": "A38467A",
+        "Orgeh": "50003400",
+        "Orgtx": "PATRIMONIO E FACILITY MANAGEMENT",
+        "Plans": "50004294",
+        "Plstx": "ADDETTO",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "X",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000300')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000300')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ELISABETTA.BATTISTA@ACEASPA.IT",
+        "Pernr": "00000300",
+        "Sname": "BATTISTA ELISABETTA",
+        "Uname": "A39409T",
+        "Orgeh": "50003400",
+        "Orgtx": "PATRIMONIO E FACILITY MANAGEMENT",
+        "Plans": "50906141",
+        "Plstx": "ADMINISTRATIVE & GENERAL ASSISITANT",
+        "Stell": "13010103",
+        "Stltx": "ADMINISTRATIVE & GENERAL",
+        "NumRichieste": "0000",
+        "IsDirect": "X",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002741')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002741')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ANTONIETTA.MARENA@ACEASPA.IT",
+        "Pernr": "00002741",
+        "Sname": "MARENA ANTONIETTA",
+        "Uname": "A35953C",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50008076",
+        "Plstx": "ADMINISTRATIVE & GENERAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000845')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000845')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "RAUL.CATELLI@ACEASPA.IT",
+        "Pernr": "00000845",
+        "Sname": "CATELLI RAUL",
+        "Uname": "A36630M",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50008084",
+        "Plstx": "O&M OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000295')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000295')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "GIANCARLO.BATTAGLIA@ACEASPA.IT",
+        "Pernr": "00000295",
+        "Sname": "BATTAGLIA GIANCARLO",
+        "Uname": "A36986R",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50008094",
+        "Plstx": "ADMINISTRATIVE & GENERAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003510')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003510')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "CLAUDIO.PETTI@ACEASPA.IT",
+        "Pernr": "00003510",
+        "Sname": "PETTI CLAUDIO",
+        "Uname": "A37196F",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50008099",
+        "Plstx": "O&M OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000563')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000563')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "PATRIZIA.BRUNI@ACEASPA.IT",
+        "Pernr": "00000563",
+        "Sname": "BRUNI PATRIZIA",
+        "Uname": "A37218T",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50008100",
+        "Plstx": "ADMINISTRATIVE & GENERAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001920')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001920')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "FABIO.FIORENTINI@ACEASPA.IT",
+        "Pernr": "00001920",
+        "Sname": "FIORENTINI FABIO",
+        "Uname": "A37257H",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50008103",
+        "Plstx": "O&M OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004579')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004579')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "PATRIZIA.UZZO@ACEASPA.IT",
+        "Pernr": "00004579",
+        "Sname": "UZZO PATRIZIA",
+        "Uname": "A37520J",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50008105",
+        "Plstx": "ADMINISTRATIVE & GENERAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000221')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000221')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MASSIMILIANO.BADA@ACEASPA.IT",
+        "Pernr": "00000221",
+        "Sname": "BADA MASSIMILIANO",
+        "Uname": "A41026E",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50008110",
+        "Plstx": "ADMINISTRATIVE & GENERAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003034')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003034')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MASSIMO.MIRANTE@ACEASPA.IT",
+        "Pernr": "00003034",
+        "Sname": "MIRANTE MASSIMO",
+        "Uname": "A35010R",
+        "Orgeh": "50003823",
+        "Orgtx": "PATRIMONIO E SERVIZI GENERALI",
+        "Plans": "50012932",
+        "Plstx": "FACILITY & PROPERTY MANAGER",
+        "Stell": "11010101",
+        "Stltx": "FACILITY & PROPERTY MANAG",
+        "NumRichieste": "0000",
+        "IsDirect": "X",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000303')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000303')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "SANDRO.BATTISTI@ACEASPA.IT",
+        "Pernr": "00000303",
+        "Sname": "BATTISTI SANDRO",
+        "Uname": "A34969K",
+        "Orgeh": "50003824",
+        "Orgtx": "PATRIMONIO",
+        "Plans": "50008073",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001183')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001183')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "LUCA.CORSI@ACEASPA.IT",
+        "Pernr": "00001183",
+        "Sname": "CORSI LUCA",
+        "Uname": "A36073R",
+        "Orgeh": "50003824",
+        "Orgtx": "PATRIMONIO",
+        "Plans": "50008078",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001657')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001657')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "CRISTIANO.DIODATI@ACEASPA.IT",
+        "Pernr": "00001657",
+        "Sname": "DIODATI CRISTIANO",
+        "Uname": "A41028G",
+        "Orgeh": "50003824",
+        "Orgtx": "PATRIMONIO",
+        "Plans": "50008111",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001115')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001115')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "FRANCESCO.COMANDINI@ACEASPA.IT",
+        "Pernr": "00001115",
+        "Sname": "COMANDINI FRANCESCO",
+        "Uname": "A39111Q",
+        "Orgeh": "50003825",
+        "Orgtx": "PROGETTAZIONE E GESTIONE SPAZI",
+        "Plans": "50008069",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004716')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004716')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "GIANCLAUDIO.VITANTONI@ACEASPA.IT",
+        "Pernr": "00004716",
+        "Sname": "VITANTONI GIAN CLAUDIO",
+        "Uname": "A36482U",
+        "Orgeh": "50003825",
+        "Orgtx": "PROGETTAZIONE E GESTIONE SPAZI",
+        "Plans": "50008080",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000114')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000114')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MAURO.ANFOLSI@ACEASPA.IT",
+        "Pernr": "00000114",
+        "Sname": "ANFOLSI MAURO",
+        "Uname": "A36483W",
+        "Orgeh": "50003825",
+        "Orgtx": "PROGETTAZIONE E GESTIONE SPAZI",
+        "Plans": "50008081",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "13010704",
+        "Stltx": "TECHNICAL ASSISTANT",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003646')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003646')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "RENATO.POMPEI@ACEASPA.IT",
+        "Pernr": "00003646",
+        "Sname": "POMPEI RENATO",
+        "Uname": "A37010M",
+        "Orgeh": "50003825",
+        "Orgtx": "PROGETTAZIONE E GESTIONE SPAZI",
+        "Plans": "50008096",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000199')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000199')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "STEFANO.ATTISANI2@ACEASPA.IT",
+        "Pernr": "00000199",
+        "Sname": "ATTISANI STEFANO",
+        "Uname": "A37237Q",
+        "Orgeh": "50003825",
+        "Orgtx": "PROGETTAZIONE E GESTIONE SPAZI",
+        "Plans": "50008102",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001585')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001585')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ELIO.DIMASCOLO@ACEASPA.IT",
+        "Pernr": "00001585",
+        "Sname": "DI MASCOLO ELIO",
+        "Uname": "A39165D",
+        "Orgeh": "50003826",
+        "Orgtx": "FACILITY MANAGEMENT",
+        "Plans": "50008071",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003596')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003596')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "DANILOSERGIO.PIRRO@ACEASPA.IT",
+        "Pernr": "00003596",
+        "Sname": "PIRRO DANILO SERGIO",
+        "Uname": "A39086B",
+        "Orgeh": "50003826",
+        "Orgtx": "FACILITY MANAGEMENT",
+        "Plans": "50008107",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003441')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003441')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MARIO.PENTASSUGLIO@ACEASPA.IT",
+        "Pernr": "00003441",
+        "Sname": "PENTASSUGLIO MARIO",
+        "Uname": "A35542S",
+        "Orgeh": "50003826",
+        "Orgtx": "FACILITY MANAGEMENT",
+        "Plans": "50013105",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00005411')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00005411')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "BARNABA.PAGLIA@ACEASPA.IT",
+        "Pernr": "00005411",
+        "Sname": "PAGLIA BARNABA",
+        "Uname": "A37226J",
+        "Orgeh": "50003826",
+        "Orgtx": "FACILITY MANAGEMENT",
+        "Plans": "50906981",
+        "Plstx": "RESPONSABILE",
+        "Stell": "11010202",
+        "Stltx": "FACILITY & PROPERTY SPECI",
+        "NumRichieste": "0000",
+        "IsDirect": "X",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002486')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002486')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MASSIMO.LIBERATI@ACEASPA.IT",
+        "Pernr": "00002486",
+        "Sname": "LIBERATI MASSIMO",
+        "Uname": "A35944J",
+        "Orgeh": "50003827",
+        "Orgtx": "LAVORI HEADQUARTER",
+        "Plans": "50008075",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003372')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003372')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ENZO.PARZIALE@ACEASPA.IT",
+        "Pernr": "00003372",
+        "Sname": "PARZIALE VINCENZO",
+        "Uname": "A36651X",
+        "Orgeh": "50003827",
+        "Orgtx": "LAVORI HEADQUARTER",
+        "Plans": "50008085",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001652')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001652')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "FRANCESCO.DIMOLFETTA@ACEASPA.IT",
+        "Pernr": "00001652",
+        "Sname": "DIMOLFETTA FRANCESCO",
+        "Uname": "A36705E",
+        "Orgeh": "50003827",
+        "Orgtx": "LAVORI HEADQUARTER",
+        "Plans": "50008087",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002346')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002346')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "PIETROGIOVANNI.IENNA@ACEASPA.IT",
+        "Pernr": "00002346",
+        "Sname": "IENNA PIETRO GIOVANNI",
+        "Uname": "A37072R",
+        "Orgeh": "50003827",
+        "Orgtx": "LAVORI HEADQUARTER",
+        "Plans": "50008097",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002168')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002168')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "GIANCARLO.GIANNINI@ACEASPA.IT",
+        "Pernr": "00002168",
+        "Sname": "GIANNINI GIANCARLO",
+        "Uname": "A37073K",
+        "Orgeh": "50003827",
+        "Orgtx": "LAVORI HEADQUARTER",
+        "Plans": "50008098",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001401')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001401')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "GIOVANNI.DEMATTEIS@ACEASPA.IT",
+        "Pernr": "00001401",
+        "Sname": "DE MATTEIS GIOVANNI",
+        "Uname": "A40138A",
+        "Orgeh": "50003827",
+        "Orgtx": "LAVORI HEADQUARTER",
+        "Plans": "50008108",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000846')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000846')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "FEDERICO.CATINI@ACEASPA.IT",
+        "Pernr": "00000846",
+        "Sname": "CATINI FEDERICO",
+        "Uname": "A37668C",
+        "Orgeh": "50003828",
+        "Orgtx": "LAVORI SOCIETA'",
+        "Plans": "50008066",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001708')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001708')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MARCO.DURASTANTI@ACEASPA.IT",
+        "Pernr": "00001708",
+        "Sname": "DURASTANTI MARCO",
+        "Uname": "A39117U",
+        "Orgeh": "50003828",
+        "Orgtx": "LAVORI SOCIETA'",
+        "Plans": "50008070",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003206')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003206')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ADOLFO.NOBILE@ACEASPA.IT",
+        "Pernr": "00003206",
+        "Sname": "NOBILE ADOLFO",
+        "Uname": "A36189Y",
+        "Orgeh": "50003828",
+        "Orgtx": "LAVORI SOCIETA'",
+        "Plans": "50008079",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000944')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000944')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "PAOLO.CHELLI@ACEASPA.IT",
+        "Pernr": "00000944",
+        "Sname": "CHELLI PAOLO",
+        "Uname": "A35226N",
+        "Orgeh": "50003828",
+        "Orgtx": "LAVORI SOCIETA'",
+        "Plans": "50012936",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004007')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004007')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MARINA.RUSTICHELLI@ACEASPA.IT",
+        "Pernr": "00004007",
+        "Sname": "RUSTICHELLI MARINA",
+        "Uname": "A36940M",
+        "Orgeh": "50003829",
+        "Orgtx": "GESTIONE DEGLI SPAZI AZIENDALI",
+        "Plans": "50008091",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004596')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004596')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "BRUNO.VALENTINI@ACEASPA.IT",
+        "Pernr": "00004596",
+        "Sname": "VALENTINI BRUNO",
+        "Uname": "A35763E",
+        "Orgeh": "50003830",
+        "Orgtx": "SERVIZI AGLI EDIFICI",
+        "Plans": "50008074",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003011')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003011')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "TOMMASO.MIGNINI@ACEASPA.IT",
+        "Pernr": "00003011",
+        "Sname": "MIGNINI TOMMASO",
+        "Uname": "A36882G",
+        "Orgeh": "50003830",
+        "Orgtx": "SERVIZI AGLI EDIFICI",
+        "Plans": "50008089",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000133')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000133')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "GIANCARLO.ANGELUCCI@ACEASPA.IT",
+        "Pernr": "00000133",
+        "Sname": "ANGELUCCI GIANCARLO",
+        "Uname": "A37497C",
+        "Orgeh": "50003830",
+        "Orgtx": "SERVIZI AGLI EDIFICI",
+        "Plans": "50008104",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003551')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003551')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MARINA.PIERANGELINI@ACEASPA.IT",
+        "Pernr": "00003551",
+        "Sname": "PIERANGELINI MARINA",
+        "Uname": "A35013E",
+        "Orgeh": "50003830",
+        "Orgtx": "SERVIZI AGLI EDIFICI",
+        "Plans": "50012935",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000981')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000981')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "OLINDO.CIANETTI@ACEASPA.IT",
+        "Pernr": "00000981",
+        "Sname": "CIANETTI OLINDO",
+        "Uname": "A36018B",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008077",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001858')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001858')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "PAOLO.FERRACCI@ACEASPA.IT",
+        "Pernr": "00001858",
+        "Sname": "FERRACCI PAOLO",
+        "Uname": "A36612Y",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008082",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002968')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002968')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ALESSANDRO.MESCHIA@ACEASPA.IT",
+        "Pernr": "00002968",
+        "Sname": "MESCHIA ALESSANDRO",
+        "Uname": "A36620R",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008083",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001188')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001188')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MAURO.CORTESI@ACEASPA.IT",
+        "Pernr": "00001188",
+        "Sname": "CORTESI MAURO",
+        "Uname": "A36700D",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008086",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003205')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003205')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MASSIMILIANO.NOBILE@ACEASPA.IT",
+        "Pernr": "00003205",
+        "Sname": "NOBILE MASSIMILIANO",
+        "Uname": "A36810P",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008088",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001934')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001934')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MAURO.FISICHELLA@ACEASPA.IT",
+        "Pernr": "00001934",
+        "Sname": "FISICHELLA MAURO",
+        "Uname": "A36914P",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008090",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003184')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00003184')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "PAOLO.NAVA@ACEASPA.IT",
+        "Pernr": "00003184",
+        "Sname": "NAVA PAOLO",
+        "Uname": "A36984M",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008092",
+        "Plstx": "TECHNICAL ASSISTANT",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000856')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000856')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ALESSANDRO.CAVALLARI@ACEASPA.IT",
+        "Pernr": "00000856",
+        "Sname": "CAVALLARI ALESSANDRO",
+        "Uname": "A36985P",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008093",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004125')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00004125')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "MARCO.SASSO@ACEASPA.IT",
+        "Pernr": "00004125",
+        "Sname": "SASSO MARCO",
+        "Uname": "A36989G",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008095",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002126')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002126')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "CARMINE.GENTILE@ACEASPA.IT",
+        "Pernr": "00002126",
+        "Sname": "GENTILE CARMINE",
+        "Uname": "A37221G",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008101",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002855')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00002855')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "DANIELE.MASSARI@ACEASPA.IT",
+        "Pernr": "00002855",
+        "Sname": "MASSARI DANIELE",
+        "Uname": "A37530N",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008106",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000949')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00000949')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "LORENZO.CHIALASTRI@ACEASPA.IT",
+        "Pernr": "00000949",
+        "Sname": "CHIALASTRI LORENZO",
+        "Uname": "A40740R",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50008109",
+        "Plstx": "FACILITY & PROPERTY OPERATOR",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      },
+      {
+        "__metadata": {
+          "id": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001106')",
+          "uri": "http://rurpas.aceaspa.it:8080/sap/opu/odata/sap/Z_SWFM_GATEWAY_MSS_SRV/TeamSet('00001106')",
+          "type": "Z_SWFM_GATEWAY_MSS_SRV.Team"
+        },
+        "Email": "ALBERTO.COLLACCHIONI@ACEASPA.IT",
+        "Pernr": "00001106",
+        "Sname": "COLLACCHIONI ALBERTO",
+        "Uname": "A35931P",
+        "Orgeh": "50003831",
+        "Orgtx": "SERVIZI TECNICI",
+        "Plans": "50012938",
+        "Plstx": "FACILITY & PROPERTY SPECIALIST",
+        "Stell": "00000000",
+        "Stltx": "",
+        "NumRichieste": "0000",
+        "IsDirect": "",
+        "IsPresent": "X"
+      }
+    ]
+  }
+}

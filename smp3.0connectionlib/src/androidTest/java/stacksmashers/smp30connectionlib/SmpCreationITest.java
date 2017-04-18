@@ -8,10 +8,12 @@ import com.koushikdutta.ion.Ion;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import static org.junit.Assert.*;
 
 import stacksmashers.smp30connectionlib.exception.SmpExceptionInvalidInput;
 import stacksmashers.smp30connectionlib.smp.SmpIntegration;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**************************
  ** {__-StAcK_SmAsHeRs-__} ** 
@@ -20,7 +22,7 @@ import stacksmashers.smp30connectionlib.smp.SmpIntegration;
  ***************************/
 
 @RunWith(AndroidJUnit4.class)
-public class CreationTest {
+public class SmpCreationITest {
 
     private Context context = InstrumentationRegistry.getTargetContext();
     private Ion ion = Ion.getDefault(context);

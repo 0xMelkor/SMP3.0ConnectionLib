@@ -67,8 +67,7 @@ public class IonSslUtil {
 
     }
 
-    public static Ion getIonHttpsInstance(Context context) throws NoSuchAlgorithmException, KeyManagementException, CertificateException, KeyStoreException, IOException {
-        Ion ion = Ion.getDefault(context);
+    public static Ion getIonHttpsInstance(Context context, Ion ion) throws NoSuchAlgorithmException, KeyManagementException, CertificateException, KeyStoreException, IOException {
         trustAllHttpsClient(ion);
         return ion;
     }

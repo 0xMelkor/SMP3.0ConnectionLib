@@ -35,7 +35,7 @@ import static org.junit.Assert.assertTrue;
  ***************************/
 
 @RunWith(JUnit4.class)
-public class ConnectionTest {
+public class SmpConnectionITest {
 
     private int SERVER_PORT = 5555;
     private AsyncHttpServer httpServer;

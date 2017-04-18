@@ -1,4 +1,4 @@
-package stacksmashers.smp30connectionlib;
+package stacksmashers.smp30connectionlibtest.test;
 
 import android.content.Context;
 
@@ -22,9 +22,10 @@ import static org.junit.Assert.assertEquals;
  ***************************/
 
 @RunWith(JUnit4.class)
-public class SmpIntegrationUnitTest {
+public class SmpIntegrationTest {
 
-    @Rule public MockitoRule rule = MockitoJUnit.rule();
+    @Rule
+    public MockitoRule rule = MockitoJUnit.rule();
     @Mock
     Context mockContext;
 
@@ -33,13 +34,13 @@ public class SmpIntegrationUnitTest {
 
 
     @Test
-    public void TestSmpIntegrationNullInputContext(){
+    public void TestSmpIntegrationNullInputContext() {
 
         String smpServiceRoot = "http://www.google.com";
         String appid = "appid";
 
         try {
-            new SmpIntegration(null, null, smpServiceRoot , appid,true);
+            new SmpIntegration(null, null, smpServiceRoot, appid, true);
         } catch (SmpExceptionInvalidInput ex) {
             String msg = ex.getMessage();
             assertEquals(msg, SmpExceptionInvalidInput.ERROR_TYPE_NULL_INPUT);
@@ -47,13 +48,13 @@ public class SmpIntegrationUnitTest {
     }
 
     @Test
-    public void TestSmpIntegrationNullInputIon(){
+    public void TestSmpIntegrationNullInputIon() {
 
         String smpServiceRoot = "http://www.google.com";
         String appid = "appid";
 
         try {
-            new SmpIntegration(mockContext, null, smpServiceRoot , appid, true);
+            new SmpIntegration(mockContext, null, smpServiceRoot, appid, true);
         } catch (SmpExceptionInvalidInput ex) {
             String msg = ex.getMessage();
             assertEquals(msg, SmpExceptionInvalidInput.ERROR_TYPE_NULL_INPUT);
@@ -61,13 +62,13 @@ public class SmpIntegrationUnitTest {
     }
 
     @Test
-    public void TestSmpIntegrationMalformedSmpUrl(){
+    public void TestSmpIntegrationMalformedSmpUrl() {
 
         String smpServiceRoot = "www.google.com";
         String appid = "appid";
 
         try {
-            new SmpIntegration(mockContext, null, smpServiceRoot , appid,true);
+            new SmpIntegration(mockContext, null, smpServiceRoot, appid, true);
         } catch (SmpExceptionInvalidInput ex) {
             String msg = ex.getMessage();
             assertEquals(msg, SmpExceptionInvalidInput.ERROR_TYPE_MALFORMED_SMP_SERVICE_URL);
@@ -75,13 +76,13 @@ public class SmpIntegrationUnitTest {
     }
 
     @Test
-    public void TestSmpIntegrationEmptyAppid(){
+    public void TestSmpIntegrationEmptyAppid() {
 
         String smpServiceRoot = "http://www.google.com";
         String appid = "";
 
         try {
-            new SmpIntegration(mockContext, null, smpServiceRoot , appid,true);
+            new SmpIntegration(mockContext, null, smpServiceRoot, appid, true);
         } catch (SmpExceptionInvalidInput ex) {
             String msg = ex.getMessage();
             assertEquals(msg, SmpExceptionInvalidInput.ERROR_TYPE_INVALID_APPID);
@@ -89,13 +90,13 @@ public class SmpIntegrationUnitTest {
     }
 
     @Test
-    public void TestSmpIntegrationBlankAppid(){
+    public void TestSmpIntegrationBlankAppid() {
 
         String smpServiceRoot = "http://www.google.com";
         String appid = "";
 
         try {
-            new SmpIntegration(mockContext, null, smpServiceRoot , appid,true);
+            new SmpIntegration(mockContext, null, smpServiceRoot, appid, true);
         } catch (SmpExceptionInvalidInput ex) {
             String msg = ex.getMessage();
             assertEquals(msg, SmpExceptionInvalidInput.ERROR_TYPE_INVALID_APPID);
