@@ -116,7 +116,9 @@ allprojects {
             
             // GSON will inject json to a collection of PojoClass instances
             Type type = new TypeToken<ArrayList<PojoClass>>() {}.getType() {};
-            oDataHttpClient.fetchODataEntitySet(smpOdataEndpoint,);
+	    // If everything is ok you would get a List<PojoClass> in the delegate method
+	    // onFetchEntitySetSuccessCallback
+            oDataHttpClient.fetchODataEntitySet(smpOdataEndpoint, type);
 
         } catch (SmpExceptionInvalidInput ex) {
             // INVALID PARAMETERS ARE PROVIDED
