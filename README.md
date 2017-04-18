@@ -45,6 +45,8 @@ allprojects {
         try {
             SmpIntegration smpIntegration = new SmpIntegration(this, Ion.getDefault(this),
                     smpServiceRoot, appid, ignoreCookies);
+	
+	    // Handle connection events
             smpIntegration.setDelegate(new SmpConnectionEventsDelegate() {
                 @Override
                 public void onLoginError(Exception e, Response<String> result) {
@@ -67,7 +69,7 @@ allprojects {
                 }
             });
 
-            // Starts connection attempt. Events are back reported to the delegate
+            // Starts connection attempt and  x-smp-app-cid retrieval. Events are back reported to the delegate
             smpIntegration.connect(username, password);
         } catch (SmpExceptionInvalidInput ex) {
             // INVALID PARAMETERS ARE PROVIDED
