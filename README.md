@@ -20,7 +20,7 @@ allprojects {
 **Add the dependency to your module build.gradle file**
 ```groovy
 	dependencies {
-	        compile 'com.github.insanediv:SMP3.0ConnectionLib:1.0.8'
+	        compile 'com.github.insanediv:SMP3.0ConnectionLib:1.0.9'
 	}
 ```
 
