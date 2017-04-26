@@ -44,7 +44,14 @@ allprojects {
 
 
         try {
-            SmpIntegration smpIntegration = new SmpIntegration(this, Ion.getDefault(this),
+	
+	    // If you need to connect a https endpoint
+	    // you need to get the correct Ion instance
+	    IonFactory ionFactory = new IonFactory(context, TypeHttpProtocol.TYPE_HTTP_PROTOCOL_HTTPS);
+	    Ion ion = ionFactory.build();
+	    
+	
+            SmpIntegration smpIntegration = new SmpIntegration(this, ion,
                     smpServiceRoot, appid, ignoreCookies);
 	
 	    // Handle connection events
