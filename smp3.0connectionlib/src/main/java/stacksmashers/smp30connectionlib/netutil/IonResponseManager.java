@@ -50,8 +50,10 @@ public class IonResponseManager {
     public static String getConnectionIdFromResponse(Response<String> result){
         List<String> cookieHeaders = result.getHeaders().getHeaders().getAll("Set-Cookie");
         String smp_app_cid = "";
-        if(cookieHeaders!=null && cookieHeaders.get(0)!=null){
-            smp_app_cid = getSmpAppCidCookieMatch(cookieHeaders.get(0));
+
+        for (String header : cookieHeaders){
+            smp_app_cid = getSmpAppCidCookieMatch(header);
+            if(smp_app_cid.length() > 0) break;
         }
 
         return smp_app_cid;
