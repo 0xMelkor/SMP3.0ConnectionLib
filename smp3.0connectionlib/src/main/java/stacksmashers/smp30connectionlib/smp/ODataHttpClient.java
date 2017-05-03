@@ -9,13 +9,20 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonObject;
 import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.async.http.Headers;
+import com.koushikdutta.async.http.NameValuePair;
 import com.koushikdutta.ion.Ion;
 import com.koushikdutta.ion.Response;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import stacksmashers.smp30connectionlib.delegate.ODataHttpClientCallback;
+import stacksmashers.smp30connectionlib.delegate.ODataHttpPostClientCallback;
+import stacksmashers.smp30connectionlib.delegate.ODataHttpTokenClientCallback;
 import stacksmashers.smp30connectionlib.enums.TypeHttpProtocol;
 import stacksmashers.smp30connectionlib.exception.SmpExceptionInvalidInput;
 import stacksmashers.smp30connectionlib.netutil.IonFactory;
@@ -54,6 +61,8 @@ public class ODataHttpClient {
      * Handle events from the OData service
      **/
     private ODataHttpClientCallback delegate;
+    private ODataHttpTokenClientCallback tokenDelegate;
+    private ODataHttpPostClientCallback postDelegate;
 
     /**
      * Class used to inject json raw data
@@ -81,6 +90,16 @@ public class ODataHttpClient {
     public void setDelegate(ODataHttpClientCallback delegate) throws SmpExceptionInvalidInput {
         InputValidator.validateNotNull(delegate);
         this.delegate = delegate;
+    }
+
+    public void setTokenDelegate(ODataHttpTokenClientCallback tokenDelegate) throws SmpExceptionInvalidInput {
+        InputValidator.validateNotNull(tokenDelegate);
+        this.tokenDelegate = tokenDelegate;
+    }
+
+    public void setPostDelegate(ODataHttpPostClientCallback postDelegate) throws SmpExceptionInvalidInput {
+        InputValidator.validateNotNull(postDelegate);
+        this.postDelegate = postDelegate;
     }
 
     public void setDeserializer(Class clazz, JsonDeserializer deserializer) throws SmpExceptionInvalidInput {
@@ -148,5 +167,76 @@ public class ODataHttpClient {
         }
         return result;
     }
+
+    public void getXCSRFToken(String url) throws SmpExceptionInvalidInput {
+        TypeHttpProtocol protocol = InputValidator.getURLProtocol(url);
+
+        try {
+            IonFactory ionFactory = new IonFactory(this.context, protocol);
+            Ion ion = ionFactory.build();
+            ion.with(ionFactory.getContext())
+                    .load(url)
+                    .addHeader("X-SMP-APPCID", xsmpappcid)
+                    .addHeader("Accept", "application/json")
+                    .addHeader("X-CSRF-Token","Fetch")
+                    .basicAuthentication(username, password)
+                    .asJsonObject()
+                    .withResponse()
+                    .setCallback(new FutureCallback<Response<JsonObject>>() {
+                        @Override
+                        public void onCompleted(Exception e, Response<JsonObject> result) {
+                            try {
+                                new IonResponseManager(e, result);
+                                Headers response = result.getHeaders().getHeaders();
+                                String token = response.get("x-csrf-token");
+
+                                if (tokenDelegate != null) {
+                                    tokenDelegate.onFetchXCSRFTokenSuccessCallback(token);
+                                }
+                            } catch (Exception e1) {
+                                if (tokenDelegate != null) {
+                                    tokenDelegate.onErrorCallback(e, result);
+                                }
+                            }
+                        }
+                    });
+        } catch (Exception e) {
+            throw new SmpExceptionInvalidInput(e.getMessage());
+        }
+    }
+
+    public void sendODataEntitySet(String url, JsonObject jsonObject, Header... params) throws SmpExceptionInvalidInput {
+        TypeHttpProtocol protocol = InputValidator.getURLProtocol(url);
+
+        try {
+            IonFactory ionFactory = new IonFactory(this.context, protocol);
+            Ion ion = ionFactory.build();
+            ion.with(ionFactory.getContext())
+                    .load(url)
+                    .setHeader(params)
+                    .basicAuthentication(username, password)
+                    .setJsonObjectBody(jsonObject)
+                    .asJsonObject()
+                    .withResponse()
+                    .setCallback(new FutureCallback<Response<JsonObject>>() {
+                        @Override
+                        public void onCompleted(Exception e, Response<JsonObject> result) {
+                            try {
+                                new IonResponseManager(e, result);
+                                if (postDelegate != null) {
+                                    postDelegate.onPostSuccessCallback();
+                                }
+                            } catch (Exception e1) {
+                                if (postDelegate != null) {
+                                    postDelegate.onErrorCallback(e, result);
+                                }
+                            }
+                        }
+                    });
+        } catch (Exception e) {
+            throw new SmpExceptionInvalidInput(e.getMessage());
+        }
+    }
+
 
 }
