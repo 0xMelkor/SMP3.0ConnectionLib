@@ -7,14 +7,14 @@ import com.koushikdutta.ion.Response;
  * Created by Y2J on 03/05/17.
  */
 
-public interface ODataHttpTokenClientCallback<T> {
+public interface ODataHttpPostClientCallback<T> {
     /**
      * Invoked on network or HTTP service error
      **/
     void onErrorCallback(Exception ex, Response<JsonObject> response);
 
     /**
-     * Invoked on success of token fetch
+     * Invoked on success
      */
-    void onFetchXCSRFTokenSuccessCallback(String token);
+    void onPostSuccessCallback();
 }
